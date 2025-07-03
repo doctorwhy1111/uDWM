@@ -106,5 +106,4 @@ private:
     class CTimeline<float>* m_ptlFade;
     const unsigned long DF_VISUALSTATE;
     const unsigned long DF_CROSSFADE;
-    protected 
 };
