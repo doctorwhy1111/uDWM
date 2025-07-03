@@ -1,5 +1,5 @@
-#include "C:\Users\Admin\source\repos\uDWM\uDWM\bitmapsource.h"
-#include "C:\Users\Admin\source\repos\uDWM\uDWM\framework.h"
+#include "bitmapsource.h"
+#include "framework.h"
 
 HRESULT CBitmapSource::Create(const MIL_CHANNEL__*, wchar_t*, CBitmapSource**)
 {

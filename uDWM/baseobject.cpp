@@ -1,4 +1,4 @@
-#include "C:/Users/Admin/source/repos/uDWM/uDWM/baseobject.h"
+#include "baseobject.h"
 
 
 CBaseObject::CBaseObject(CBaseObject&)
