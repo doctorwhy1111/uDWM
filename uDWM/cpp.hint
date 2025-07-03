@@ -1,0 +1,2 @@
+#define UDWM_API __declspec(dllexport)
+#define UDWM_API __declspec(dllimport)
