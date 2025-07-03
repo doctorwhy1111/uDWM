@@ -11,35 +11,37 @@ class CCanvas
 };
 class CMesh2DVisual : public CCanvas
 {
-    public HRESULT Create(const struct MIL_CHANNEL__*, class CMesh2DVisual**);
-    protected void* operator new(unsigned int, void*);
-    protected void* operator new(unsigned int);
-    protected void* operator new[](unsigned int);
-    protected void operator delete(void*);
-    protected void operator delete[](void*);
-    private void CMesh2DVisual(class CMesh2DVisual&);
-    protected void CMesh2DVisual();
-    protected void ~CMesh2DVisual();
-    protected HRESULT Initialize(const struct MIL_CHANNEL__*);
-    private int operator=(class CMesh2DVisual&);
-    public HRESULT InsertAfterMeshImage(class CMeshImage*, class CMeshImage*);
-    public HRESULT AddMeshImage(class CMeshImage*);
-    public void RemoveMeshImage(class CMeshImage*);
-    public void RemoveAllMeshImages();
-    public HRESULT ValidateVisualPostSubgraph();
-    public HRESULT UpdateLayout();
-    public void UpdateMeshLayout();
-    public HRESULT UpdateMesh();
-    public HRESULT AddDrawMesh2DInstruction(class CResource*, class CResource*);
-    public HRESULT SetClipMargins(struct _MARGINS*);
-    public HRESULT CloneVisualTree(class CVisual**);
-    public HRESULT InsertMeshImageAtIndex(class CMeshImage*, unsigned int);
-    public const unsigned long DF_MESHLAYOUT;
-    public const unsigned long DF_MESH;
-    private class DynArray<CMeshImage*, 0> m_rgpMeshImages;
-    private struct _MARGINS* m_pmarClip;
-    public void __local_vftable_ctor_closure();
-    protected void* __vecDelDtor(unsigned int);
+public:
+    HRESULT Create(const struct MIL_CHANNEL__*, class CMesh2DVisual**);
+    HRESULT InsertAfterMeshImage(class CMeshImage*, class CMeshImage*);
+    HRESULT AddMeshImage(class CMeshImage*);
+    void RemoveMeshImage(class CMeshImage*);
+    void RemoveAllMeshImages();
+    HRESULT ValidateVisualPostSubgraph();
+    HRESULT UpdateLayout();
+    void UpdateMeshLayout();
+    HRESULT UpdateMesh();
+    HRESULT AddDrawMesh2DInstruction(class CResource*, class CResource*);
+    HRESULT SetClipMargins(struct _MARGINS*);
+    HRESULT CloneVisualTree(class CVisual**);
+    HRESULT InsertMeshImageAtIndex(class CMeshImage*, unsigned int);
+    const unsigned long DF_MESHLAYOUT;
+    const unsigned long DF_MESH;
+protected:
+    void* operator new(unsigned int, void*);
+    void* operator new(unsigned int);
+    void* operator new[](unsigned int);
+    void operator delete(void*);
+    void operator delete[](void*);
+    CMesh2DVisual();
+    ~CMesh2DVisual();
+    HRESULT Initialize(const struct MIL_CHANNEL__*);
+    void* __vecDelDtor(unsigned int);
+private:
+    CMesh2DVisual(class CMesh2DVisual&);
+    int operator=(class CMesh2DVisual&);
+    class DynArray<CMeshImage*, 0> m_rgpMeshImages;
+    struct _MARGINS* m_pmarClip;
 };
 class CButton : public CMesh2DVisual
 {
