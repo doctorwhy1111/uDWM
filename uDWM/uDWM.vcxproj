@@ -152,6 +152,7 @@
   <ItemGroup>
     <ClInclude Include="baseobject.h" />
     <ClInclude Include="bitmapsource.h" />
+    <ClInclude Include="button.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="pch.h" />
   </ItemGroup>
