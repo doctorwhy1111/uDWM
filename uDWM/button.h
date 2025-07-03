@@ -5,11 +5,11 @@ class CBitmapSourceArray
 {
 
 };
-class CCanvas
+class CCanvas  // supposed to be in canvas.h
 {
 
 };
-class CMesh2DVisual : public CCanvas
+class CMesh2DVisual : public CCanvas // not supposed to be here either
 {
 public:
     HRESULT Create(const struct MIL_CHANNEL__*, class CMesh2DVisual**);
