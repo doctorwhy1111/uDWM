@@ -155,6 +155,7 @@
     <ClInclude Include="button.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="pch.h" />
+    <ClInclude Include="visual.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="baseobject.cpp" />
@@ -165,6 +166,7 @@
     <ClCompile Include="livepreview.cpp" />
     <ClCompile Include="livepreviewtimeline.cpp" />
     <ClCompile Include="pch.cpp" />
+    <ClCompile Include="visual.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
