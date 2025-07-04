@@ -12,6 +12,6 @@ void CButton::SetEnabled(bool)
 
 void CButton::OnMouseEnter()
 {
-	CVisual::SetDirtyFlags(32768);
+	CVisual::SetDirtyFlags(32768, m_dwDirtyFlags);
 }
 
